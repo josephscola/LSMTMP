@@ -1,4 +1,0 @@
-# Incertitude expérimentale
-
-```{tableofcontents}
-```

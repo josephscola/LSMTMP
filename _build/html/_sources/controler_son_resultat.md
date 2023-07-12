@@ -1,4 +1,0 @@
-# Analyse dimensionnelle
-
-```{tableofcontents}
-```

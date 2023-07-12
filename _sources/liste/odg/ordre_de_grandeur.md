@@ -1,3 +1,0 @@
-# Ordre de grandeur
-
-

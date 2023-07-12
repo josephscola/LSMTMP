@@ -1,6 +1,6 @@
-# Notation scientifique
+# Outil n° 2 : notation scientifique
 
-La valeur numérique d'une grandeur physique est un nombre décimal $x$
+Par convention la valeur numérique d'une grandeur physique est un nombre décimal $x$
 qui doit être écrit dans la *notation scientifique*, suivi de l'unité :
 
 $$X = x\cdot X_1,\quad \mathsf{avec}\quad x = \pm a \cdot 10^n$$
@@ -15,3 +15,8 @@ Cette notation hiérarchise l'information numérique :
 
 -   la mantisse $a$ permet de comparer deux grandeurs du même ordre de
     grandeur.
+   
+En appliquant cette convention, le résultat sera facile à lire et donc facile à contrôler.
+ 
+```{tableofcontents}
+```

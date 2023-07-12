@@ -52,6 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Mesure, incertitude, erreur, précision" href="incertitude/incertitude.html" />
     <link rel="prev" title="Valeurs numériques pour les angles usuels" href="calcul_mental/table_trigo2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -112,10 +113,15 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contrôler son résultat
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="analdim/analyse_dimensionnelle.html">
-   Analyse dimensionnelle
+   Outil n° 1 : analyse dimensionnelle
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -161,7 +167,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="notation_scientifique/notation_scientifique.html">
-   Notation scientifique
+   Outil n° 2 : notation scientifique
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -183,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="odg/ordre_de_grandeur.html">
-   Ordre de grandeur
+   Outil n° 3 : ordres de grandeur
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -215,7 +221,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="calcul_mental/calcul_mental.html">
-   Savoir contrôler une valeur numérique
+   Outil n° 4 : savoir contrôler une valeur numérique
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -244,6 +250,77 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="current reference internal" href="#">
    Mémo : comment contrôler son résultat de calcul ?
   </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Incertitude expérimentale
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="incertitude/incertitude.html">
+   Mesure, incertitude, erreur, précision
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="incertitude/erreur_aleatoire.html">
+     Erreur aléatoire
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="incertitude/sources_erreur_aleatoire.html">
+     Sources d’erreur aléatoire
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="incertitude/erreur_systematique.html">
+     Erreur systématique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="incertitude/sens_physique.html">
+     Précision expérimentale et sens physique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="incertitude/mesure_grandeur_physique.html">
+   Mesure d’une grandeur physique
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="incertitude/representations_resultat_mesure.html">
+   Représentation d’un résultat de mesure
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="incertitude/intervalle_confiance.html">
+     Intervalle de confiance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="incertitude/notation_alternative.html">
+     Notation alternative
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="incertitude/incertitude_representation.html">
+     Notation d’un résultat de mesure
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -434,16 +511,16 @@ numériques qu’à la dernière ligne.</p></li>
 méthode :</p>
 <ul class="simple">
 <li><p>analyse dimensionnelle : les deux membres de l’équation finale
-ont-ils la même dimension ?</p></li>
+ont-ils la même dimension (outil n° 1) ?</p></li>
 <li><p>le sens de variation de la grandeur avec ses paramètres est-il
 correct ?</p></li>
 </ul>
 </li>
 <li><p>Réécrivez l’expression finale en remplaçant les symboles par leur
 valeur numérique <span style="color: red">en notation scientifique
-et dans l’unité du système international</span>.</p></li>
+et dans l’unité du système international</span> (outil n° 2).</p></li>
 <li><p>Calculez sans calculatrice l’<span style="color: red">ordre de
-grandeur</span> du résultat final.</p></li>
+grandeur</span> du résultat final puis sa valeur approchée (outils n° 3 et 4).</p></li>
 <li><p>Faites le calcul à la <span style="color: red">calculatrice</span>
 tel que vous l’avez écrit au point 3.</p></li>
 <li><p>Cherchez une <span style="color: red">confirmation du résultat de
@@ -496,6 +573,13 @@ grandeur ?</p></li>
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Valeurs numériques pour les angles usuels</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="incertitude/incertitude.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Mesure, incertitude, erreur, précision</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

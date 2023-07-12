@@ -8,17 +8,17 @@
     méthode :
 
     -   analyse dimensionnelle : les deux membres de l’équation finale
-        ont-ils la même dimension ?
+        ont-ils la même dimension (outil n° 1) ?
 
     -   le sens de variation de la grandeur avec ses paramètres est-il
         correct ?
 
 3.  Réécrivez l’expression finale en remplaçant les symboles par leur
     valeur numérique <span style="color: red">en notation scientifique
-    et dans l’unité du système international</span>.
+    et dans l’unité du système international</span> (outil n° 2).
 
 4.  Calculez sans calculatrice l’<span style="color: red">ordre de
-    grandeur</span> du résultat final.
+    grandeur</span> du résultat final puis sa valeur approchée (outils n° 3 et 4).
 
 5.  Faites le calcul à la <span style="color: red">calculatrice</span>
     tel que vous l’avez écrit au point 3.

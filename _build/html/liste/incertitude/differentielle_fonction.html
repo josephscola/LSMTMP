@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Représentation d’un résultat de mesure &#8212; Méthodologie pour la Physique</title>
+    <title>Point technique : différentielle d’une fonction à plusieurs variables &#8212; Méthodologie pour la Physique</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,10 +50,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Intervalle de confiance" href="intervalle_confiance.html" />
-    <link rel="prev" title="Mesure d’une grandeur physique" href="mesure_grandeur_physique.html" />
+    <link rel="prev" title="Incertitude absolue" href="calcul_incertitudes.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -300,11 +301,11 @@ const thebe_selector_output = ".output, .cell_output"
    Mesure d’une grandeur physique
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="representations_resultat_mesure.html">
    Représentation d’un résultat de mesure
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
@@ -327,23 +328,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="propagation_erreurs.html">
    Comment calculer une incertitude ?
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="calcul_incertitudes.html">
      Incertitude absolue
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="differentielle_fonction.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Point technique : différentielle d’une fonction à plusieurs variables
     </a>
    </li>
@@ -439,7 +440,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fliste/incertitude/representations_resultat_mesure.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fliste/incertitude/differentielle_fonction.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -467,7 +468,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/liste/incertitude/representations_resultat_mesure.md"
+        <a href="../../_sources/liste/incertitude/differentielle_fonction.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -516,7 +517,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Représentation d’un résultat de mesure</h1>
+                <h1>Point technique : différentielle d’une fonction à plusieurs variables</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -528,10 +529,56 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="representation-d-un-resultat-de-mesure">
-<h1>Représentation d’un résultat de mesure<a class="headerlink" href="#representation-d-un-resultat-de-mesure" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+  <section id="point-technique-differentielle-d-une-fonction-a-plusieurs-variables">
+<h1>Point technique : différentielle d’une fonction à plusieurs variables<a class="headerlink" href="#point-technique-differentielle-d-une-fonction-a-plusieurs-variables" title="Permalink to this headline">#</a></h1>
+<p><em>Dans cette partie est introduite une notion du programme du second semestre de licence.</em></p>
+<p>Soit la fonction réelle à trois variables réelles:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{rccc}
+f : &amp;\mathbb{R}^3   &amp;\mapsto &amp; \mathbb{R} \\
+ &amp;      (x,y,z)     &amp; = &amp;      f(x,y,z)
+\end{array}
+\end{split}\]</div>
+<p>La <em>différentielle</em> d’une fonction à plusieurs variables représente la
+quantité par laquelle varie cette fonction lorsque chacune de ses
+variables varie d’une quantité élémentaire.</p>
+<p>La <em>différentielle</em> de la fonction <span class="math notranslate nohighlight">\(f\)</span>, si elle existe, est définie par</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{d}f \equiv \sum\limits_{\alpha=x,y,z} \dfrac{\partial f}{\partial \alpha} \mathrm{d}\alpha
+            = \dfrac{\partial f}{\partial x} \mathrm{d}x
+             + \dfrac{\partial f}{\partial y} \mathrm{d}y
+             + \dfrac{\partial f}{\partial z} \mathrm{d}z
+\]</div>
+<p>De même que
+toutes les fonctions d’une seule variable ne sont pas dérivables, toutes
+les fonctions de plusieurs variables ne sont pas différentiable. Il faut
+que toutes ses dérivées partielles existent et soient continues pour
+qu’une fonction soit différentiable sur un intervalle considéré.</p>
+<p>Soit l’expression différentielle définie par</p>
+<div class="math notranslate nohighlight">
+\[
+\delta W = g(x,y,z) \mathrm{d}x + h(x,y,z) \mathrm{d}y + k(x,y,z) \mathrm{d}z.
+\]</div>
+<p><span class="math notranslate nohighlight">\(\delta W\)</span> est une <em>différentielle totale</em> si et seulement si il existe
+une fonction <span class="math notranslate nohighlight">\(f\)</span> telle que <span class="math notranslate nohighlight">\(\mathrm{d}f = \delta W\)</span>, si et seulement si
+les trois relations suivantes sont vérifiées:</p>
+<div class="math notranslate nohighlight">
+\[
+g(x,y,z) = \dfrac{\partial f}{\partial x};
+h(x,y,z) = \dfrac{\partial f}{\partial y};
+k(x,y,z) = \dfrac{\partial f}{\partial z};
+\]</div>
+<p>On a alors
+<span class="math notranslate nohighlight">\(f = \int \delta W\)</span>.</p>
+<p>Dans le cas d’une fonction à deux variables, on admettra le théorème
+suivant:</p>
+<blockquote>
+<div><p><strong>Théorème de Schwarz</strong>
+L’expression différentielle <span class="math notranslate nohighlight">\(\delta W = g\mathrm{d}x + h \mathrm{d}y\)</span> est totale si et seulement si les dérivées croisées sont égales, <em>i.e.</em>
+<span class="math notranslate nohighlight">\(\dfrac{\partial g}{\partial y} = \dfrac{\partial h}{\partial x}\)</span>.</p>
+</div></blockquote>
 </section>
 
     <script type="text/x-thebe-config">
@@ -561,19 +608,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="mesure_grandeur_physique.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="calcul_incertitudes.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Mesure d’une grandeur physique</p>
+            <p class="prev-next-title">Incertitude absolue</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="intervalle_confiance.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Intervalle de confiance</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

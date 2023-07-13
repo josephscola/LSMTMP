@@ -1,6 +1,6 @@
-# Mémo : comment contrôler son résultat de calcul ?
+# Comment contrôler son résultat de calcul en TD et CC ?
 
-1.  Menez le calcul en <span style="color: red">expressions
+1.  Menez le calcul en <span style="color: tomato">expressions
     littérales</span>, en ne remplaçant les symboles par leurs valeurs
     numériques qu’à la dernière ligne.
 
@@ -14,16 +14,16 @@
         correct ?
 
 3.  Réécrivez l’expression finale en remplaçant les symboles par leur
-    valeur numérique <span style="color: red">en notation scientifique
+    valeur numérique <span style="color: tomato">en notation scientifique
     et dans l’unité du système international</span> (outil n° 2).
 
-4.  Calculez sans calculatrice l’<span style="color: red">ordre de
+4.  Calculez sans calculatrice l’<span style="color: tomato">ordre de
     grandeur</span> du résultat final puis sa valeur approchée (outils n° 3 et 4).
 
-5.  Faites le calcul à la <span style="color: red">calculatrice</span>
+5.  Faites le calcul à la <span style="color: tomato">calculatrice</span>
     tel que vous l’avez écrit au point 3.
 
-6.  Cherchez une <span style="color: red">confirmation du résultat de
+6.  Cherchez une <span style="color: tomato">confirmation du résultat de
     calcul</span> par une autre méthode :
 
     -   l’ordre de grandeur est-il cohérent ?

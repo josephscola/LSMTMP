@@ -1,4 +1,4 @@
-# Quelques poids et mesures au XVIII$^\mathrm{e}$ siècle
+# Quelques poids et mesures au XVIIIème siècle
 |                  |                                |            |            |            |
 |:----------------:|:------------------------------:|:----------:|:----------:|:----------:|
 |                  |             mesure             | équivalent |   mesure   | équivalent |

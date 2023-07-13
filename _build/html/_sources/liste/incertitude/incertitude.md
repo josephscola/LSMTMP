@@ -1,4 +1,4 @@
-# Mesure, incertitude, erreur, précision
+# Mesure, erreur, incertitude, et précision
 
 >"On mesure l'intelligence d'un individu à la quantité
 d'incertitudes qu'il est capable de supporter." Emmanuel Kant

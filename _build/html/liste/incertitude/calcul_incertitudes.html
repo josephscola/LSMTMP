@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Représentation d’un résultat de mesure &#8212; Méthodologie pour la Physique</title>
+    <title>Incertitude absolue &#8212; Méthodologie pour la Physique</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,10 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Intervalle de confiance" href="intervalle_confiance.html" />
-    <link rel="prev" title="Mesure d’une grandeur physique" href="mesure_grandeur_physique.html" />
+    <link rel="next" title="Incertitude relative" href="incertitude_relative.html" />
+    <link rel="prev" title="Comment calculer une incertitude ?" href="propagation_erreurs.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -141,11 +143,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../analdim/table_poids_mesures_XVIII.html">
-     Quelques poids et mesures au XVIII
-     <span class="math notranslate nohighlight">
-      \(^\mathrm{e}\)
-     </span>
-     siècle
+     Quelques poids et mesures au XVIIIème siècle
     </a>
    </li>
    <li class="toctree-l2">
@@ -300,11 +298,11 @@ const thebe_selector_output = ".output, .cell_output"
    Mesure d’une grandeur physique
   </a>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="representations_resultat_mesure.html">
    Représentation d’un résultat de mesure
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
@@ -327,24 +325,24 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="propagation_erreurs.html">
    Comment calculer une incertitude ?
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
   <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="calcul_incertitudes.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Incertitude absolue
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="differentielle_fonction.html">
-     Point technique : différentielle d’une fonction à plusieurs variables
+    <a class="reference internal" href="incertitude_relative.html">
+     Incertitude relative
     </a>
    </li>
   </ul>
@@ -439,7 +437,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fliste/incertitude/representations_resultat_mesure.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fliste/incertitude/calcul_incertitudes.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -467,7 +465,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/liste/incertitude/representations_resultat_mesure.md"
+        <a href="../../_sources/liste/incertitude/calcul_incertitudes.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -516,7 +514,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Représentation d’un résultat de mesure</h1>
+                <h1>Incertitude absolue</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -528,10 +526,43 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="representation-d-un-resultat-de-mesure">
-<h1>Représentation d’un résultat de mesure<a class="headerlink" href="#representation-d-un-resultat-de-mesure" title="Permalink to this headline">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="incertitude-absolue">
+<h1>Incertitude absolue<a class="headerlink" href="#incertitude-absolue" title="Permalink to this headline">#</a></h1>
+<p>On considère une <em>grandeur physique</em> <span class="math notranslate nohighlight">\(f\)</span> dépendant de 3 <em>paramètres</em> <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, <span class="math notranslate nohighlight">\(z\)</span>.
+Si la façon dont <span class="math notranslate nohighlight">\(F\)</span> dépend de ses paramètres est connue, on peut <strong>représenter la <em>grandeur physique</em> comme une <em>fonction</em></strong> <span class="math notranslate nohighlight">\(f\)</span> dépendant de 3 <em>variables</em> qui représentent les <em>paramètres physiques</em>.</p>
+<p>Si la connaissance des paramètres est entachée des erreurs :</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+x &amp;= x_0 \pm \Delta x \\
+y &amp;= y_0 \pm \Delta y \\
+z &amp;= z_0 \pm \Delta z \\
+\end{align}
+\end{split}\]</div>
+<p>alors se pose la question de  l’incertitude sur <span class="math notranslate nohighlight">\(f(x_0, y_0, z_0)\)</span>, c’est-à-dire :</p>
+<blockquote>
+<div><p>“de combien <span class="math notranslate nohighlight">\(f\)</span> varie-t-elle lorsque <span class="math notranslate nohighlight">\(x\)</span> varie de <span class="math notranslate nohighlight">\(\pm \delta x\)</span> autour de <span class="math notranslate nohighlight">\(x_0\)</span>, <span class="math notranslate nohighlight">\(y\)</span> varie de <span class="math notranslate nohighlight">\(\pm \delta y\)</span> autour de <span class="math notranslate nohighlight">\(y_0\)</span> et <span class="math notranslate nohighlight">\(z\)</span> varie de <span class="math notranslate nohighlight">\(\pm \delta z\)</span> autour de <span class="math notranslate nohighlight">\(z_0\)</span> ?”</p>
+</div></blockquote>
+<p>Cette question est très proche de celle à laquelle la <em>différentielle</em> apporte une réponse.
+En effet, la différentielle d’une fonction <span class="math notranslate nohighlight">\(\mathrm{d}f (x_0, y_0, z_0)\)</span> définit</p>
+<blockquote>
+<div><p>“de combien combien <span class="math notranslate nohighlight">\(f\)</span> varie lorsque <span class="math notranslate nohighlight">\(x\)</span> varie d’un petit incrément (positif) <span class="math notranslate nohighlight">\(\mathrm{d}x\)</span> autour de <span class="math notranslate nohighlight">\(x_0\)</span>, <span class="math notranslate nohighlight">\(y\)</span> varie de <span class="math notranslate nohighlight">\(\mathrm{d}y\)</span> autour de <span class="math notranslate nohighlight">\(y_0\)</span> et <span class="math notranslate nohighlight">\(z\)</span> varie de <span class="math notranslate nohighlight">\(\mathrm{d}z\)</span> autour de <span class="math notranslate nohighlight">\(z_0\)</span>.</p>
+</div></blockquote>
+<p>La différentielle de <span class="math notranslate nohighlight">\(f\)</span> est définie par :</p>
+<div class="math notranslate nohighlight">
+\[
+\mathrm{d} f =  \left( \dfrac{\partial f}{\partial x} \right)_{y,z} \mathrm{d}x
+            + \left( \dfrac{\partial f}{\partial y} \right)_{x,z} \mathrm{d} y
+            + \left( \dfrac{\partial f}{\partial z} \right)_{x,y} \mathrm{d} z
+\]</div>
+<p>où <span class="math notranslate nohighlight">\(\left( \dfrac{\partial f}{\partial x}\right)_{y,z}\)</span> est la <em>dérivée partielle de <span class="math notranslate nohighlight">\(f\)</span> par rapport à <span class="math notranslate nohighlight">\(x\)</span></em>, qui se calcule comme la dérivée de <span class="math notranslate nohighlight">\(f\)</span> par rapport à <span class="math notranslate nohighlight">\(x\)</span> en considérant que toutes les autres variables de <span class="math notranslate nohighlight">\(f\)</span> (dans l’exemple <span class="math notranslate nohighlight">\(y\)</span> et <span class="math notranslate nohighlight">\(z\)</span>) sont des constantes.</p>
+<p>L’<em>incertitude absolue</em> est obtenue en additionnant les termes en valeurs absolues pour que les contributions s’ajoutent quel que soient les signe des dérivées partielles et des variations des paramètres <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> et <span class="math notranslate nohighlight">\(z\)</span> :</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta f =  \left| \left( \dfrac{\partial f}{\partial x} \right)_{y,z} \right| \Delta x
+            + \left| \left( \dfrac{\partial f}{\partial y} \right)_{x,z} \right| \Delta y
+            + \left| \left( \dfrac{\partial f}{\partial z} \right)_{x,y} \right| \Delta z
+\]</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -561,17 +592,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="mesure_grandeur_physique.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="propagation_erreurs.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Mesure d’une grandeur physique</p>
+            <p class="prev-next-title">Comment calculer une incertitude ?</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="intervalle_confiance.html" title="next page">
+    <a class='right-next' id="next-link" href="incertitude_relative.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Intervalle de confiance</p>
+        <p class="prev-next-title">Incertitude relative</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

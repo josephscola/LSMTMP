@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Mesure, incertitude, erreur, précision &#8212; Méthodologie pour la Physique</title>
+    <title>Mesure, erreur, incertitude, et précision &#8212; Méthodologie pour la Physique</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Erreur aléatoire" href="erreur_aleatoire.html" />
-    <link rel="prev" title="Mémo : comment contrôler son résultat de calcul ?" href="../autoCon_memo.html" />
+    <link rel="prev" title="Comment contrôler son résultat de calcul en TP ?" href="../fiche_TP.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -141,11 +141,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../analdim/table_poids_mesures_XVIII.html">
-     Quelques poids et mesures au XVIII
-     <span class="math notranslate nohighlight">
-      \(^\mathrm{e}\)
-     </span>
-     siècle
+     Quelques poids et mesures au XVIIIème siècle
     </a>
    </li>
    <li class="toctree-l2">
@@ -198,6 +194,11 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../odg/odg_exemple.html">
+     Comment calculer un ordre de grandeur ?
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../odg/table_prefixes.html">
      Notation des multiples de 10
     </a>
@@ -246,10 +247,27 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../autoCon_memo.html">
-   Mémo : comment contrôler son résultat de calcul ?
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../memo.html">
+   Mémo
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../autoCon_memo.html">
+     Comment contrôler son résultat de calcul en TD et CC ?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../fiche_TP.html">
+     Comment contrôler son résultat de calcul en TP ?
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -260,10 +278,10 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   Mesure, incertitude, erreur, précision
+   Mesure, erreur, incertitude, et précision
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -299,8 +317,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="representations_resultat_mesure.html">
    Représentation d’un résultat de mesure
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -318,6 +336,28 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="incertitude_representation.html">
      Notation d’un résultat de mesure
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="propagation_erreurs.html">
+   Comment calculer une incertitude ?
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="calcul_incertitudes.html">
+     Incertitude absolue
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="incertitude_relative.html">
+     Incertitude relative
     </a>
    </li>
   </ul>
@@ -489,7 +529,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Mesure, incertitude, erreur, précision</h1>
+                <h1>Mesure, erreur, incertitude, et précision</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -501,8 +541,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="mesure-incertitude-erreur-precision">
-<h1>Mesure, incertitude, erreur, précision<a class="headerlink" href="#mesure-incertitude-erreur-precision" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="mesure-erreur-incertitude-et-precision">
+<h1>Mesure, erreur, incertitude, et précision<a class="headerlink" href="#mesure-erreur-incertitude-et-precision" title="Permalink to this headline">#</a></h1>
 <blockquote>
 <div><p>“On mesure l’intelligence d’un individu à la quantité
 d’incertitudes qu’il est capable de supporter.” Emmanuel Kant</p>
@@ -548,11 +588,11 @@ dans la brume.” Oscar Wilde</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../autoCon_memo.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../fiche_TP.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Mémo : comment contrôler son résultat de calcul ?</p>
+            <p class="prev-next-title">Comment contrôler son résultat de calcul en TP ?</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="erreur_aleatoire.html" title="next page">

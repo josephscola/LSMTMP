@@ -30,6 +30,7 @@ parts:
       - file: liste/calcul_mental/autoCon1
       - file: liste/calcul_mental/autoCon2
       - file: liste/calcul_mental/table_trigo2
+      - file: liste/calcul_mental/relations_trigo
     - file: liste/memo
       sections:
         - file: liste/autoCon_memo

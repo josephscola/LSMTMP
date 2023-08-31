@@ -143,11 +143,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../analdim/table_poids_mesures_XVIII.html">
-     Quelques poids et mesures au XVIII
-     <span class="math notranslate nohighlight">
-      \(^\mathrm{e}\)
-     </span>
-     siècle
+     Quelques poids et mesures au XVIIIème siècle
     </a>
    </li>
    <li class="toctree-l2">
@@ -169,7 +165,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../notation_scientifique/notation_scientifique.html">
-   Outil n° 2: notation scientifique
+   Outil n° 2 : notation scientifique
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -191,7 +187,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../odg/ordre_de_grandeur.html">
-   Outil n° 3: ordres de grandeur
+   Outil n° 3 : ordres de grandeur
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
   <label for="toctree-checkbox-3">
@@ -199,6 +195,11 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../odg/odg_exemple.html">
+     Comment calculer un ordre de grandeur ?
+    </a>
+   </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../odg/table_prefixes.html">
      Notation des multiples de 10
@@ -246,12 +247,34 @@ const thebe_selector_output = ".output, .cell_output"
      Valeurs numériques pour les angles usuels
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="relations_trigo.html">
+     Relations trigonométriques
+    </a>
+   </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../autoCon_memo.html">
-   Mémo : comment contrôler son résultat de calcul ?
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../memo.html">
+   Mémo
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../autoCon_memo.html">
+     Comment contrôler son résultat de calcul en TD et CC ?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../fiche_TP.html">
+     Comment contrôler son résultat de calcul en TP ?
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
@@ -262,10 +285,10 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../incertitude/incertitude.html">
-   Incertitude expérimentale
+   Mesure, erreur, incertitude, et précision
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
-  <label for="toctree-checkbox-5">
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -301,8 +324,8 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal" href="../incertitude/representations_resultat_mesure.html">
    Représentation d’un résultat de mesure
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -320,6 +343,28 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../incertitude/incertitude_representation.html">
      Notation d’un résultat de mesure
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../incertitude/propagation_erreurs.html">
+   Comment calculer une incertitude ?
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../incertitude/calcul_incertitudes.html">
+     Incertitude absolue
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../incertitude/incertitude_relative.html">
+     Incertitude relative
     </a>
    </li>
   </ul>
@@ -511,6 +556,7 @@ title="Print to PDF"
 <li class="toctree-l1"><a class="reference internal" href="autoCon1.html">Tables des inverses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="autoCon2.html">Tables des valeurs usuelles des fonctions courantes.</a></li>
 <li class="toctree-l1"><a class="reference internal" href="table_trigo2.html">Valeurs numériques pour les angles usuels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="relations_trigo.html">Relations trigonométriques</a></li>
 </ul>
 </div>
 </section>

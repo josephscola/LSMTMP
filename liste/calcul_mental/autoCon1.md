@@ -12,7 +12,9 @@
 |          8          |   2.667   |   2.000   |   1.600   |   1.333   |   1.143   |   1.000   |   0.889   |
 |          9          |   3.000   |   2.250   |   1.800   |   1.500   |   1.286   |   1.125   |   1.000   |
 
-Tableau à mémoriser évaluation 1 : colonnes 1-3
+Tableau à mémoriser
+
+évaluation 1 : colonnes 1-3
 
 évaluation 2 : colonnes 1-5
 

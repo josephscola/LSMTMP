@@ -53,4 +53,13 @@ parts:
       sections:
       - file: liste/incertitude/calcul_incertitudes
       - file: liste/incertitude/incertitude_relative
-
+  - caption: Vecteur et trigonométrie
+    chapters:
+    - file: liste/vecteurs
+      sections:
+      - file: liste/grandeur_vectorielle
+      - file: liste/repere
+      - file: liste/cercle_trigo
+      - file: liste/projection
+      - file: liste/projection2
+      - file: liste/nage_waza

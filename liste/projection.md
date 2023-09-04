@@ -59,8 +59,6 @@ $$\cot \theta = \frac{\cos \theta}{\sin \theta} = \frac{1}{\tan \theta}$$
 ```
 
 
-Retrouver le cercle trigonométrique interactif sur la page eCampus de la
-Méthodologie.
-[ici](../cercle_trigo_embed.html)
+Retrouver le [cercle trigonométrique interactif](../liste/cercle_trigo_embed.html) sur la page eCampus de la Méthodologie.
 
 

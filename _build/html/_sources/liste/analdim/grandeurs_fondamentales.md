@@ -19,5 +19,9 @@ $\rightarrow$ Système International établi en 1960, redéfini en 2018.
 | Intensité lumineuse             |     $  J$      | candela      |     cd     |
 
 
-![](SI_base_unit.png)
+![](../liste/analdim/SI_base_unit.png)
+```{image} ../liste/analdim/SI_base_unit.png
+:width: 400px
+:align: center
+```
 

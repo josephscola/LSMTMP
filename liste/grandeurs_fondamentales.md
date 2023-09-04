@@ -18,6 +18,11 @@ $\rightarrow$ Système International établi en 1960, redéfini en 2018.
 | Quantité de matière             |     $  N$      | mole         |     mol    |
 | Intensité lumineuse             |     $  J$      | candela      |     cd     |
 
-
-![](SI_base_unit.png)
+```{figure} ../liste/SI_base_unit.png
+---
+width: 400px
+align: center
+---
+Grandeurs fondamentales; les flèches représentent la convention 2018 de définition des unes par rapport aux autres.
+```
 

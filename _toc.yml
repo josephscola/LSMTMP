@@ -4,12 +4,14 @@
 format: jb-book
 root: intro
 parts:
-  - caption: Contrôler son résultat  
+  - caption: Contrôler son résultat
     chapters:
+    - file: liste/pourquoi_controler_son_resultat
     - file: liste/analdim/analyse_dimensionnelle
       sections:
       - file: liste/analdim/grandeur_physique
-      - file: liste/analdim/grandeurs_fondamentales  
+      - file: liste/analdim/table_lettres_grecques
+      - file: liste/grandeurs_fondamentales  
       - file: liste/analdim/table_poids_mesures_XVIII
       - file: liste/analdim/grandeur_combinee
       - file: liste/analdim/analdim_exemples_application_optique
@@ -63,3 +65,4 @@ parts:
       - file: liste/projection
       - file: liste/projection2
       - file: liste/nage_waza
+      - file: liste/nage_waza_1_et_2

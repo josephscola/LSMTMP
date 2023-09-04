@@ -1,4 +1,4 @@
-# Grandeurs physiques
+# Grandeurs physiques combinées
 
 Toute grandeur physique peut être exprimée en fonction des 7 grandeurs
 fondamentales.

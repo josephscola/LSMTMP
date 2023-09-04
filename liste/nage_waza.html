@@ -54,6 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exemple d’application" href="nage_waza_1_et_2.html" />
     <link rel="prev" title="Projections orthogonale d’un vecteur : produit scalaire" href="projection2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -120,6 +121,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="pourquoi_controler_son_resultat.html">
+   Pourquoi contrôler son résultat ?
+  </a>
+ </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="analdim/analyse_dimensionnelle.html">
    Outil n° 1 : analyse dimensionnelle
@@ -136,7 +142,12 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="analdim/grandeurs_fondamentales.html">
+    <a class="reference internal" href="analdim/table_lettres_grecques.html">
+     Lettres grecques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="grandeurs_fondamentales.html">
      Grandeurs fondamentales
     </a>
    </li>
@@ -147,7 +158,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="analdim/grandeur_combinee.html">
-     Grandeurs physiques
+     Grandeurs physiques combinées
     </a>
    </li>
    <li class="toctree-l2">
@@ -415,6 +426,11 @@ const thebe_selector_output = ".output, .cell_output"
      Comment projeter un vecteur ?
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nage_waza_1_et_2.html">
+     Exemple d’application
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -594,39 +610,14 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Comment projeter un vecteur ?
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#projection-par-changement-de-base">
-     Projection par changement de base
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#projection-par-decomposition-de-l-angle">
-     Projection par décomposition de l’angle
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#technique-n-circ-1-projection-par-changement-de-repere">
-   Technique n
-   <span class="math notranslate nohighlight">
-    \(^\circ\)
-   </span>
-   1 : projection par changement de repère
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#projection-par-changement-de-base">
+   Projection par changement de base
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#technique-n-circ-2-projection-par-decomposition-de-l-angle">
-   Technique n
-   <span class="math notranslate nohighlight">
-    \(^\circ\)
-   </span>
-   2 : projection par décomposition de l’angle
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#projection-par-decomposition-de-l-angle">
+   Projection par décomposition de l’angle
   </a>
  </li>
 </ul>
@@ -648,39 +639,14 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Comment projeter un vecteur ?
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#projection-par-changement-de-base">
-     Projection par changement de base
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#projection-par-decomposition-de-l-angle">
-     Projection par décomposition de l’angle
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#technique-n-circ-1-projection-par-changement-de-repere">
-   Technique n
-   <span class="math notranslate nohighlight">
-    \(^\circ\)
-   </span>
-   1 : projection par changement de repère
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#projection-par-changement-de-base">
+   Projection par changement de base
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#technique-n-circ-2-projection-par-decomposition-de-l-angle">
-   Technique n
-   <span class="math notranslate nohighlight">
-    \(^\circ\)
-   </span>
-   2 : projection par décomposition de l’angle
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#projection-par-decomposition-de-l-angle">
+   Projection par décomposition de l’angle
   </a>
  </li>
 </ul>
@@ -698,7 +664,7 @@ title="Print to PDF"
 <section id="projection-par-changement-de-base">
 <h2>Projection par changement de base<a class="headerlink" href="#projection-par-changement-de-base" title="Permalink to this headline">#</a></h2>
 <ol class="simple">
-<li><p><strong>Poser le repère</strong> dans lequel l’angle est défini</p></li>
+<li><p><strong>Poser le repère</strong> orthonormé direct dans lequel l’angle est défini</p></li>
 <li><p><strong>Projeter</strong> le vecteur dans le repère de travail <span class="math notranslate nohighlight">\((\vec{i}, \vec{j})\)</span>
 en fonction de <span class="math notranslate nohighlight">\(q\)</span></p></li>
 <li><p><strong>Exprimer</strong> <span class="math notranslate nohighlight">\(\vec{i}\)</span> et <span class="math notranslate nohighlight">\(\vec{j}\)</span> dans le repère de
@@ -721,55 +687,6 @@ fonction de <span class="math notranslate nohighlight">\(\theta\)</span></p></li
 <p>Les deux techniques sont <strong>équivalentes</strong>.</p>
 </div>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="technique-n-circ-1-projection-par-changement-de-repere">
-<h1>Technique n<span class="math notranslate nohighlight">\(^\circ\)</span> 1 : projection par changement de repère<a class="headerlink" href="#technique-n-circ-1-projection-par-changement-de-repere" title="Permalink to this headline">#</a></h1>
-<a class="reference internal image-reference" href="../_images/ProjectionVecteur.png"><img alt="../_images/ProjectionVecteur.png" class="align-center" src="../_images/ProjectionVecteur.png" style="width: 200px;" /></a>
-<ol>
-<li><p><strong>Poser la repère</strong> dans lequel l’angle est défini</p>
-<div class="math notranslate nohighlight">
-\[\vec{i} = - \vec{u}_y;\quad \vec{j} = + \vec{u}_x\]</div>
-</li>
-<li><p><strong>Projeter</strong> le vecteur dans le repère de travail <span class="math notranslate nohighlight">\((\vec{i}, \vec{j})\)</span>
-en fonction de <span class="math notranslate nohighlight">\(q\)</span></p>
-<div class="math notranslate nohighlight">
-\[\overrightarrow{OM} = r (\cos q\, \vec{i} + \sin q\, \vec{j})\]</div>
-</li>
-<li><p><strong>Exprimer</strong> <span class="math notranslate nohighlight">\(\vec{i}\)</span> et <span class="math notranslate nohighlight">\(\vec{j}\)</span> dans le repère de
-l’énoncé <span class="math notranslate nohighlight">\((\vec{u}_x, \vec{u}_y)\)</span></p>
-<div class="math notranslate nohighlight">
-\[\overrightarrow{OM} = r \left( \cos q\, (-\vec{u}_y) + \sin q\, (+\vec{u}_x) \right)\]</div>
-</li>
-<li><p><strong>Simplifier</strong> l’expression du vecteur</p>
-<div class="math notranslate nohighlight">
-\[\overrightarrow{OM} = r (\sin q\, \vec{u}_x - \cos q\, \vec{u}_y)\]</div>
-</li>
-</ol>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="technique-n-circ-2-projection-par-decomposition-de-l-angle">
-<h1>Technique n<span class="math notranslate nohighlight">\(^\circ\)</span> 2 : projection par décomposition de l’angle<a class="headerlink" href="#technique-n-circ-2-projection-par-decomposition-de-l-angle" title="Permalink to this headline">#</a></h1>
-<a class="reference internal image-reference" href="../_images/ProjectionVecteur.png"><img alt="../_images/ProjectionVecteur.png" class="align-center" src="../_images/ProjectionVecteur.png" style="width: 200px;" /></a>
-<ol>
-<li><p><strong>Poser l’angle</strong> <span class="math notranslate nohighlight">\(\theta\)</span> défini à partir du vecteur <span class="math notranslate nohighlight">\(\vec{u}_x\)</span> de
-l’énoncé</p>
-<div class="math notranslate nohighlight">
-\[\theta  = \angle{(\vec{u}_x, \overrightarrow{OM})} = q - \pi/2\]</div>
-</li>
-<li><p><strong>Projeter</strong> le vecteur dans le repère <span class="math notranslate nohighlight">\((\vec{u}_x, \vec{u}_y)\)</span> en
-fonction de <span class="math notranslate nohighlight">\(\theta\)</span></p>
-<div class="math notranslate nohighlight">
-\[\overrightarrow{OM} = r (\cos \theta\, \vec{u}_x + \sin \theta\, \vec{u}_y)\]</div>
-</li>
-<li><p><strong>Exprimer</strong> <span class="math notranslate nohighlight">\(\theta\)</span> en fonction de l’angle de l’énoncé <span class="math notranslate nohighlight">\(q\)</span></p>
-<div class="math notranslate nohighlight">
-\[\overrightarrow{OM} = r (\cos (q - \pi/2)\, \vec{u}_x + \sin (q - \pi/2)\, \vec{u}_y)\]</div>
-</li>
-<li><p><strong>Simplifier</strong> l’expression du vecteur en utilisant les relations
-trigonométriques</p>
-<div class="math notranslate nohighlight">
-\[\overrightarrow{OM} = r (\sin q\, \vec{u}_x - \cos q\, \vec{u}_y)\]</div>
-</li>
-</ol>
 </section>
 
     <script type="text/x-thebe-config">
@@ -805,6 +722,13 @@ trigonométriques</p>
             <p class="prev-next-subtitle">previous</p>
             <p class="prev-next-title">Projections orthogonale d’un vecteur : produit scalaire</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="nage_waza_1_et_2.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exemple d’application</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>

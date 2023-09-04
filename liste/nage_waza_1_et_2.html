@@ -6,54 +6,55 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Projections orthogonale d’un vecteur : produit scalaire &#8212; Méthodologie pour la Physique</title>
+    <title>Exemple d’application &#8212; Méthodologie pour la Physique</title>
     
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
-    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/design-tabs.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Comment projeter un vecteur ?" href="nage_waza.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -88,19 +89,19 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../../index.html">
+    <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
       
       
-      <img src="../../_static/UFR_sciences_logo_2020_ecran.png" class="logo" alt="logo">
+      <img src="../_static/UFR_sciences_logo_2020_ecran.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">Méthodologie pour la Physique</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -108,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="../../intro.html">
+                <a class="reference internal" href="../intro.html">
                     LSMTMP - Méthodologie pour la Physique
                 </a>
             </li>
@@ -120,12 +121,12 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../pourquoi_controler_son_resultat.html">
+  <a class="reference internal" href="pourquoi_controler_son_resultat.html">
    Pourquoi contrôler son résultat ?
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../analdim/analyse_dimensionnelle.html">
+  <a class="reference internal" href="analdim/analyse_dimensionnelle.html">
    Outil n° 1 : analyse dimensionnelle
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
@@ -135,44 +136,44 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../analdim/grandeur_physique.html">
+    <a class="reference internal" href="analdim/grandeur_physique.html">
      Grandeur Physique
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../analdim/table_lettres_grecques.html">
+    <a class="reference internal" href="analdim/table_lettres_grecques.html">
      Lettres grecques
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../grandeurs_fondamentales.html">
+    <a class="reference internal" href="grandeurs_fondamentales.html">
      Grandeurs fondamentales
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../analdim/table_poids_mesures_XVIII.html">
+    <a class="reference internal" href="analdim/table_poids_mesures_XVIII.html">
      Quelques poids et mesures au XVIIIème siècle
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../analdim/grandeur_combinee.html">
+    <a class="reference internal" href="analdim/grandeur_combinee.html">
      Grandeurs physiques combinées
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../analdim/analdim_exemples_application_optique.html">
+    <a class="reference internal" href="analdim/analdim_exemples_application_optique.html">
      Analyse dimensionnelle pour l’optique
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../analdim/analdim_exemples_application_meca.html">
+    <a class="reference internal" href="analdim/analdim_exemples_application_meca.html">
      Analyse dimensionnelle pour la mécanique
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../notation_scientifique/notation_scientifique.html">
+  <a class="reference internal" href="notation_scientifique/notation_scientifique.html">
    Outil n° 2 : notation scientifique
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -182,19 +183,19 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../notation_scientifique/representation_calcul.html">
+    <a class="reference internal" href="notation_scientifique/representation_calcul.html">
      Notation d’un résultat en TD et en examen
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../notation_scientifique/incertitude_representation.html">
+    <a class="reference internal" href="notation_scientifique/incertitude_representation.html">
      Notation d’un résultat en TP
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../odg/ordre_de_grandeur.html">
+  <a class="reference internal" href="odg/ordre_de_grandeur.html">
    Outil n° 3 : ordres de grandeur
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -204,34 +205,34 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../odg/odg_exemple.html">
+    <a class="reference internal" href="odg/odg_exemple.html">
      Comment calculer un ordre de grandeur ?
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../odg/table_prefixes.html">
+    <a class="reference internal" href="odg/table_prefixes.html">
      Notation des multiples de 10
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../odg/table_OdG_temps.html">
+    <a class="reference internal" href="odg/table_OdG_temps.html">
      Ordre de grandeur des durées
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../odg/table_OdG_longueur.html">
+    <a class="reference internal" href="odg/table_OdG_longueur.html">
      Ordre de grandeur des longueurs
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../odg/table_OdG_masse.html">
+    <a class="reference internal" href="odg/table_OdG_masse.html">
      Ordres de grandeur des masses
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../calcul_mental/calcul_mental.html">
+  <a class="reference internal" href="calcul_mental/calcul_mental.html">
    Outil n° 4 : savoir contrôler une valeur numérique
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
@@ -241,29 +242,29 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../calcul_mental/autoCon1.html">
+    <a class="reference internal" href="calcul_mental/autoCon1.html">
      Tables des inverses
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../calcul_mental/autoCon2.html">
+    <a class="reference internal" href="calcul_mental/autoCon2.html">
      Tables des valeurs usuelles des fonctions courantes.
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../calcul_mental/table_trigo2.html">
+    <a class="reference internal" href="calcul_mental/table_trigo2.html">
      Valeurs numériques pour les angles usuels
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../calcul_mental/relations_trigo.html">
+    <a class="reference internal" href="calcul_mental/relations_trigo.html">
      Relations trigonométriques
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../memo.html">
+  <a class="reference internal" href="memo.html">
    Mémo
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
@@ -273,12 +274,12 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../autoCon_memo.html">
+    <a class="reference internal" href="autoCon_memo.html">
      Comment contrôler son résultat de calcul en TD et CC ?
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../fiche_TP.html">
+    <a class="reference internal" href="fiche_TP.html">
      Comment contrôler son résultat de calcul en TP ?
     </a>
    </li>
@@ -292,7 +293,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../incertitude/incertitude.html">
+  <a class="reference internal" href="incertitude/incertitude.html">
    Mesure, erreur, incertitude, et précision
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
@@ -302,34 +303,34 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/erreur_aleatoire.html">
+    <a class="reference internal" href="incertitude/erreur_aleatoire.html">
      Erreur aléatoire
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/sources_erreur_aleatoire.html">
+    <a class="reference internal" href="incertitude/sources_erreur_aleatoire.html">
      Sources d’erreur aléatoire
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/erreur_systematique.html">
+    <a class="reference internal" href="incertitude/erreur_systematique.html">
      Erreur systématique
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/sens_physique.html">
+    <a class="reference internal" href="incertitude/sens_physique.html">
      Précision expérimentale et sens physique
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../incertitude/mesure_grandeur_physique.html">
+  <a class="reference internal" href="incertitude/mesure_grandeur_physique.html">
    Mesure d’une grandeur physique
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../incertitude/representations_resultat_mesure.html">
+  <a class="reference internal" href="incertitude/representations_resultat_mesure.html">
    Représentation d’un résultat de mesure
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
@@ -339,24 +340,24 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/intervalle_confiance.html">
+    <a class="reference internal" href="incertitude/intervalle_confiance.html">
      Intervalle de confiance
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/notation_alternative.html">
+    <a class="reference internal" href="incertitude/notation_alternative.html">
      Notation alternative
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/incertitude_representation.html">
+    <a class="reference internal" href="incertitude/incertitude_representation.html">
      Notation d’un résultat de mesure
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../incertitude/propagation_erreurs.html">
+  <a class="reference internal" href="incertitude/propagation_erreurs.html">
    Comment calculer une incertitude ?
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
@@ -366,12 +367,12 @@ const thebe_selector_output = ".output, .cell_output"
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/calcul_incertitudes.html">
+    <a class="reference internal" href="incertitude/calcul_incertitudes.html">
      Incertitude absolue
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../incertitude/incertitude_relative.html">
+    <a class="reference internal" href="incertitude/incertitude_relative.html">
      Incertitude relative
     </a>
    </li>
@@ -383,49 +384,49 @@ const thebe_selector_output = ".output, .cell_output"
   Vecteur et trigonométrie
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../vecteurs.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="vecteurs.html">
    Vecteurs et trigonométrie
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
   <label for="toctree-checkbox-9">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../grandeur_vectorielle.html">
+    <a class="reference internal" href="grandeur_vectorielle.html">
      Grandeurs scalaires, grandeurs vectorielle
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../repere.html">
+    <a class="reference internal" href="repere.html">
      Repères de projection
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../cercle_trigo.html">
+    <a class="reference internal" href="cercle_trigo.html">
      Cercle trigonométrique
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../projection.html">
+    <a class="reference internal" href="projection.html">
      Projections orthogonale d’un vecteur : triangle rectangle
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../projection2.html">
+    <a class="reference internal" href="projection2.html">
      Projections orthogonale d’un vecteur : produit scalaire
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="../nage_waza.html">
+    <a class="reference internal" href="nage_waza.html">
      Comment projeter un vecteur ?
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../nage_waza_1_et_2.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Exemple d’application
     </a>
    </li>
@@ -521,7 +522,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fliste/trigo/projection2.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fliste/nage_waza_1_et_2.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -549,7 +550,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../../_sources/liste/trigo/projection2.md"
+        <a href="../_sources/liste/nage_waza_1_et_2.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -609,13 +610,13 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition-du-produit-scalaire">
-   Définition du produit scalaire
+  <a class="reference internal nav-link" href="#technique-n-1-projection-par-changement-de-repere">
+   Technique n° 1 : projection par changement de repère
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#projection-dans-une-base-orthonormee-directe">
-   Projection dans une base orthonormée directe
+  <a class="reference internal nav-link" href="#technique-n-2-projection-par-decomposition-de-l-angle">
+   Technique n° 2 : projection par décomposition de l’angle
   </a>
  </li>
 </ul>
@@ -627,7 +628,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Projections orthogonale d’un vecteur : produit scalaire</h1>
+                <h1>Exemple d’application</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -638,13 +639,13 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#definition-du-produit-scalaire">
-   Définition du produit scalaire
+  <a class="reference internal nav-link" href="#technique-n-1-projection-par-changement-de-repere">
+   Technique n° 1 : projection par changement de repère
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#projection-dans-une-base-orthonormee-directe">
-   Projection dans une base orthonormée directe
+  <a class="reference internal nav-link" href="#technique-n-2-projection-par-decomposition-de-l-angle">
+   Technique n° 2 : projection par décomposition de l’angle
   </a>
  </li>
 </ul>
@@ -657,36 +658,56 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="projections-orthogonale-d-un-vecteur-produit-scalaire">
-<h1>Projections orthogonale d’un vecteur : produit scalaire<a class="headerlink" href="#projections-orthogonale-d-un-vecteur-produit-scalaire" title="Permalink to this headline">#</a></h1>
-<section id="definition-du-produit-scalaire">
-<h2>Définition du produit scalaire<a class="headerlink" href="#definition-du-produit-scalaire" title="Permalink to this headline">#</a></h2>
-<p>On rappelle la définition <em>géométrique</em> du produit scalaire :
-<span class="math notranslate nohighlight">\(\vec{u} \cdot \vec{v} = \Vert \vec{u} \Vert \cdot \Vert \vec{v} \Vert \cdot \cos (\vec{u},\vec{v})\)</span></p>
+  <section class="tex2jax_ignore mathjax_ignore" id="exemple-d-application">
+<h1>Exemple d’application<a class="headerlink" href="#exemple-d-application" title="Permalink to this headline">#</a></h1>
+<section id="technique-n-1-projection-par-changement-de-repere">
+<h2>Technique n° 1 : projection par changement de repère<a class="headerlink" href="#technique-n-1-projection-par-changement-de-repere" title="Permalink to this headline">#</a></h2>
+<a class="reference internal image-reference" href="../_images/ProjectionVecteur2.png"><img alt="../_images/ProjectionVecteur2.png" class="align-center" src="../_images/ProjectionVecteur2.png" style="width: 200px;" /></a>
+<ol>
+<li><p><strong>Poser le repère</strong> orthonormé direct dans lequel l’angle est défini</p>
+<div class="math notranslate nohighlight">
+\[\vec{i} = - \vec{u}_y;\quad \vec{j} = + \vec{u}_x\]</div>
+</li>
+<li><p><strong>Projeter</strong> le vecteur dans le repère de travail <span class="math notranslate nohighlight">\((\vec{i}, \vec{j})\)</span>
+en fonction de <span class="math notranslate nohighlight">\(q\)</span></p>
+<div class="math notranslate nohighlight">
+\[\overrightarrow{OM} = r (\cos q\, \vec{i} + \sin q\, \vec{j})\]</div>
+</li>
+<li><p><strong>Exprimer</strong> <span class="math notranslate nohighlight">\(\vec{i}\)</span> et <span class="math notranslate nohighlight">\(\vec{j}\)</span> dans le repère de
+l’énoncé <span class="math notranslate nohighlight">\((\vec{u}_x, \vec{u}_y)\)</span></p>
+<div class="math notranslate nohighlight">
+\[\overrightarrow{OM} = r \left( \cos q\, (-\vec{u}_y) + \sin q\, (+\vec{u}_x) \right)\]</div>
+</li>
+<li><p><strong>Simplifier</strong> l’expression du vecteur</p>
+<div class="math notranslate nohighlight">
+\[\overrightarrow{OM} = r (\sin q\, \vec{u}_x - \cos q\, \vec{u}_y)\]</div>
+</li>
+</ol>
 </section>
-<section id="projection-dans-une-base-orthonormee-directe">
-<h2>Projection dans une base orthonormée directe<a class="headerlink" href="#projection-dans-une-base-orthonormee-directe" title="Permalink to this headline">#</a></h2>
+<section id="technique-n-2-projection-par-decomposition-de-l-angle">
+<h2>Technique n° 2 : projection par décomposition de l’angle<a class="headerlink" href="#technique-n-2-projection-par-decomposition-de-l-angle" title="Permalink to this headline">#</a></h2>
+<a class="reference internal image-reference" href="../_images/ProjectionVecteur.png"><img alt="../_images/ProjectionVecteur.png" class="align-center" src="../_images/ProjectionVecteur.png" style="width: 200px;" /></a>
+<ol>
+<li><p><strong>Poser l’angle</strong> <span class="math notranslate nohighlight">\(\theta\)</span> défini à partir du vecteur <span class="math notranslate nohighlight">\(\vec{u}_x\)</span> de
+l’énoncé</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{rcl}
-r\cdot \cos \theta &amp;=&amp; ||\overrightarrow{OM} || \cdot 1 \cdot \cos \theta \\
-                   &amp;=&amp; ||\overrightarrow{OM} || \cdot ||\vec{u}_x || \cdot \cos (\vec{u}_x, \overrightarrow{OM}) \\
-                   &amp;=&amp; \overrightarrow{OM} \cdot \vec{u}_x 
-\end{array}\end{split}\]</div>
-<p>En procédant de même suivant <span class="math notranslate nohighlight">\(\vec{u}_y\)</span>, on retrouve finalement les projections orthogonales de <span class="math notranslate nohighlight">\(\overrightarrow{OM}\)</span> dans <span class="math notranslate nohighlight">\((\vec{u}_x, \vec{u}_y)\)</span> :</p>
+\[\theta  = \angle{(\vec{u}_x, \overrightarrow{OM})} = q - \pi/2\]</div>
+</li>
+<li><p><strong>Projeter</strong> le vecteur dans le repère <span class="math notranslate nohighlight">\((\vec{u}_x, \vec{u}_y)\)</span> en
+fonction de <span class="math notranslate nohighlight">\(\theta\)</span></p>
 <div class="math notranslate nohighlight">
-\[\begin{split}\left\{
-\begin{array}{rcl}
-r\cdot \cos \theta &amp;=&amp; \overrightarrow{OM} \cdot \vec{u}_x = x \\
-r\cdot \sin \theta &amp;=&amp; \overrightarrow{OM} \cdot \vec{u}_y = y
-\end{array}
-\right.\end{split}\]</div>
-<a class="reference internal image-reference" href="liste/liste/trigo/trigo_triangle_vect.png"><img alt="liste/liste/trigo/trigo_triangle_vect.png" class="align-center" src="liste/liste/trigo/trigo_triangle_vect.png" style="width: 200px;" /></a>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Résultat important Le <strong>produit scalaire</strong> d’un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{OM}\)</span> et d’un
-vecteur unitaire représente la <strong>projection orthogonale</strong> de <span class="math notranslate nohighlight">\(\overrightarrow{OM}\)</span> sur
-la direction du vecteur unitaire.</p>
-</div>
+\[\overrightarrow{OM} = r (\cos \theta\, \vec{u}_x + \sin \theta\, \vec{u}_y)\]</div>
+</li>
+<li><p><strong>Exprimer</strong> <span class="math notranslate nohighlight">\(\theta\)</span> en fonction de l’angle de l’énoncé <span class="math notranslate nohighlight">\(q\)</span></p>
+<div class="math notranslate nohighlight">
+\[\overrightarrow{OM} = r (\cos (q - \pi/2)\, \vec{u}_x + \sin (q - \pi/2)\, \vec{u}_y)\]</div>
+</li>
+<li><p><strong>Simplifier</strong> l’expression du vecteur en utilisant les relations
+trigonométriques</p>
+<div class="math notranslate nohighlight">
+\[\overrightarrow{OM} = r (\sin q\, \vec{u}_x - \cos q\, \vec{u}_y)\]</div>
+</li>
+</ol>
 </section>
 </section>
 
@@ -703,7 +724,7 @@ la direction du vecteur unitaire.</p>
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./liste/trigo"
+            path: "./liste"
         },
         predefinedOutput: true
     }
@@ -717,6 +738,13 @@ la direction du vecteur unitaire.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="nage_waza.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Comment projeter un vecteur ?</p>
+        </div>
+    </a>
 </div>
             </footer>
         </div>
@@ -738,7 +766,7 @@ la direction du vecteur unitaire.</p>
     </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
 
   </body>

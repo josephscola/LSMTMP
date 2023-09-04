@@ -16,9 +16,3 @@
 | $\sqrt{10}$ | 3.162 |
 
 Tableau à mémoriser
-
-évaluation 1 : colonnes 1-3
-
-évaluation 2 : colonnes 1-5
-
-évaluation >2 : colonnes 1-7

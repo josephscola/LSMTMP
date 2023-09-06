@@ -66,3 +66,6 @@ parts:
       - file: liste/projection2
       - file: liste/nage_waza
       - file: liste/nage_waza_1_et_2
+  - caption: Projet semestriel
+    chapters:
+    - file: liste/projet

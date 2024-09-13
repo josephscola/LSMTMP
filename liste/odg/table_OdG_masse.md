@@ -13,7 +13,7 @@
 | $1\cdot 10^6$     | la masse des déjections annuelles d’un troupeau de 55 vaches de 550 kg en moyenne | $1.004\cdot 10^{6}$ kg    |
 | $1\cdot 10^9$     | la masse de la production mondiale annuelle de silicium                           | $7\cdot 10^{9}$ kg        |
 | $1\cdot 10^{12}$  | la masse de la production mondiale annuelle de blé en 2018                        | $0.8\cdot 10^{12}$ kg     |
-| $1\cdot 10^{18}$  | la masse totale des eaux de la mer Méditerranée                                   | $4\cdot 10^{18}$ kg       |
+| $1\cdot 10^{19}$  | la masse totale des eaux de la mer Méditerranée                                   | $4\cdot 10^{18}$ kg       |
 | $1\cdot 10^{21}$  | la masse totale des eaux océaniques                                               | $1.4\cdot 10^{21}$ kg     |
-| $1\cdot 10^{24}$  | la masse de la Terre                                                              | $5.974\cdot 10^{24}$ kg   |
+| $1\cdot 10^{25}$  | la masse de la Terre                                                              | $5.974\cdot 10^{24}$ kg   |
 | $1\cdot 10^{30}$  | la masse du Soleil                                                                | $2\cdot 10^{30}$ kg       |

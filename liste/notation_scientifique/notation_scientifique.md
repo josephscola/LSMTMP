@@ -5,7 +5,7 @@ qui doit être écrit dans la *notation scientifique*, suivi de l'unité :
 
 $$X = x\cdot X_1,\quad \mathsf{avec}\quad x = \pm a \cdot 10^n$$
 
--   $a$ est un réel (la *mantisse* de $x$), $a\in[0;10[$
+-   $a$ est un réel (la *mantisse* de $x$), $a = \alpha,\beta,\gamma,\delta\epsilon\phi... \alpha \in]0;9]$
 
 -   $n$ est un entier relatif (l'*exposant* de $x$)
 

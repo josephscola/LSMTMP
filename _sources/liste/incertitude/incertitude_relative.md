@@ -1,15 +1,6 @@
 # Incertitude relative
 
-L'incertitude relative se définit par
-
-$$
-\dfrac{\Delta f}{f} = \dfrac{1}{f} 
-                        \left[
-                        \left| \left( \dfrac{\partial f}{\partial x} \right)_{y,z} \right| \Delta x
-                        + \left| \left( \dfrac{\partial f}{\partial y} \right)_{x,z} \right| \Delta y
-                        + \left| \left( \dfrac{\partial f}{\partial z} \right)_{x,y} \right| \Delta z
-                        \right]
-$$
+L'incertitude relative se définit par $\dfrac{\Delta f}{f}$.
 
  L'incertitude relative peut être
 obtenue par le calcul direct de la différentielle de $f$ ou bien par la

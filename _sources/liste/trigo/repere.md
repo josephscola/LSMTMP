@@ -7,8 +7,8 @@ d'un repère de projection.
 
 On choisit toujours un repère
 <span
-style="color: blue">ortho</span><span style="color: green">normée</span>
-<span style="color: red">directe</span> $(O,\vec{u}, \vec{v})$ :
+style="color: blue">ortho</span><span style="color: green">normé</span>
+<span style="color: red">direct</span> $(O,\vec{u}, \vec{v})$ :
 
 -   $O$ : origine du repère
 

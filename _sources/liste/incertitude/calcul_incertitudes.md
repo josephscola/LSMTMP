@@ -14,7 +14,7 @@ z &= z_0 \pm \Delta z \\
 $$
 
 alors se pose la question de  l'incertitude sur $f(x_0, y_0, z_0)$, c'est-à-dire :
->"de combien $f$ varie-t-elle lorsque $x$ varie de $\pm \delta x$ autour de $x_0$, $y$ varie de $\pm \delta y$ autour de $y_0$ et $z$ varie de $\pm \delta z$ autour de $z_0$ ?"
+>"de combien $f$ varie-t-elle lorsque $x$ varie de $\pm \Delta x$ autour de $x_0$, $y$ varie de $\pm \Delta y$ autour de $y_0$ et $z$ varie de $\pm \Delta z$ autour de $z_0$ ?"
 
 Cette question est très proche de celle à laquelle la _différentielle_ apporte une réponse.
 En effet, la différentielle d'une fonction $\mathrm{d}f (x_0, y_0, z_0)$ définit 
@@ -30,12 +30,16 @@ $$
 
 où $\left( \dfrac{\partial f}{\partial x}\right)_{y,z}$ est la _dérivée partielle de $f$ par rapport à $x$_, qui se calcule comme la dérivée de $f$ par rapport à $x$ en considérant que toutes les autres variables de $f$ (dans l'exemple $y$ et $z$) sont des constantes.
 
-L'_incertitude absolue_ est obtenue en additionnant les termes en valeurs absolues pour que les contributions s'ajoutent quel que soient les signe des dérivées partielles et des variations des paramètres $x$, $y$ et $z$ :
+Dans une situation expérimentale, on ne peut pas connaître la valeur exacte des incertitudes $\mathrm{d}$x, $\mathrm{d}$y et $\mathrm{d}$z et on considère plutôt qu'il s'agit de grandeurs aléatoires qui sont chacune bien estimée par les nombres $\Delta x$, $\Delta y$ et $\Delta z$.
+Cet estimateur correspond en général à l'écart-type de la grandeur aléatoire.
+L'_incertitude absolue_ est alors obtenue de la façon suivante :
 
 $$
-\Delta f =  \left| \left( \dfrac{\partial f}{\partial x} \right)_{y,z} \right| \Delta x
-            + \left| \left( \dfrac{\partial f}{\partial y} \right)_{x,z} \right| \Delta y
-            + \left| \left( \dfrac{\partial f}{\partial z} \right)_{x,y} \right| \Delta z
+\Delta f =  \sqrt{
+  			  \left[ \left( \dfrac{\partial f}{\partial x} \right)_{y,z} \Delta x \right]^2
+            + \left[ \left( \dfrac{\partial f}{\partial y} \right)_{x,z} \Delta y \right]^2
+            + \left[ \left( \dfrac{\partial f}{\partial z} \right)_{x,y} \Delta z \right|^2
+            }
 $$
 
 
